@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sori — Investor Pitch</title>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}body{font-family:'Helvetica Neue',Arial,sans-serif;background:#0E0E1A;color:#fff;line-height:1.6;min-height:100vh}.topbar{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(14,14,26,0.95);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,0.08);display:flex;align-items:center;padding:0 32px;height:56px}.topbar-logo{font-size:18px;font-weight:800;letter-spacing:-0.5px;color:#fff;margin-right:40px;flex-shrink:0}.topbar-logo span{color:#6366F1}.tabs{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none;flex:1}.tabs::-webkit-scrollbar{display:none}.tab{padding:0 16px;height:56px;display:flex;align-items:center;font-size:13px;font-weight:500;color:rgba(255,255,255,0.45);cursor:pointer;white-space:nowrap;border-bottom:2px solid transparent;transition:all 0.15s;user-select:none}.tab:hover{color:rgba(255,255,255,0.75)}.tab.active{color:#fff;border-bottom-color:#6366F1}.topbar-badge{margin-left:auto;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.25);white-space:nowrap;flex-shrink:0}.lang-toggle{display:flex;align-items:center;margin-left:16px;flex-shrink:0;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:20px;overflow:hidden}.lang-btn{padding:4px 12px;font-size:11px;font-weight:700;letter-spacing:1px;cursor:pointer;color:rgba(255,255,255,0.35);transition:all 0.15s;user-select:none}.lang-btn.active{background:#6366F1;color:#fff;border-radius:20px}.lang-btn:hover:not(.active){color:rgba(255,255,255,0.7)}.content{padding-top:56px;min-height:100vh}.tab-pane{display:none}.tab-pane.active{display:block}.pitch-hero{background:linear-gradient(135deg,#1A1A2E 0%,#0E0E1A 60%);padding:100px 60px 80px;position:relative;overflow:hidden;min-height:100vh;display:flex;flex-direction:column;justify-content:center}.pitch-hero::before{content:'';position:absolute;top:-200px;right:-200px;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(99,102,241,0.08) 0%,transparent 70%);pointer-events:none}.pitch-hero::after{content:'';position:absolute;bottom:-100px;left:-100px;width:400px;height:400px;border-radius:50%;background:radial-gradient(circle,rgba(139,92,246,0.05) 0%,transparent 70%);pointer-events:none}.hero-inner{max-width:960px;margin:0 auto;width:100%;position:relative;z-index:1}.hero-tag{font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#6366F1;margin-bottom:24px;font-weight:600}.hero-h1{font-size:80px;font-weight:800;letter-spacing:-3px;line-height:0.95;margin-bottom:16px;color:#fff}.hero-h1 em{font-style:normal;color:#6366F1}.hero-sub{font-size:22px;color:rgba(255,255,255,0.55);font-weight:400;margin-bottom:60px;letter-spacing:-0.3px}.hero-desc{font-size:17px;color:rgba(255,255,255,0.65);max-width:620px;line-height:1.75;margin-bottom:72px}.stats-row{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(255,255,255,0.08);border-radius:16px;overflow:hidden;max-width:600px}.stat{background:rgba(255,255,255,0.04);padding:32px 28px;text-align:center}.stat-num{font-size:48px;font-weight:800;letter-spacing:-2px;color:#fff;line-height:1;margin-bottom:8px}.stat-label{font-size:12px;color:rgba(255,255,255,0.4);text-transform:uppercase;letter-spacing:1.5px;font-weight:600}.section{max-width:960px;margin:0 auto;padding:80px 40px}.section-tag{font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#6366F1;margin-bottom:16px;font-weight:600}.section-h2{font-size:44px;font-weight:800;letter-spacing:-1.5px;line-height:1.1;margin-bottom:20px;color:#fff}.section-lead{font-size:17px;color:rgba(255,255,255,0.55);max-width:620px;line-height:1.7;margin-bottom:56px}.page-dark{background:#0E0E1A;min-height:100vh}.page-mid{background:#111120;min-height:100vh}.page-light{background:#13131F;min-height:100vh}.card{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:16px;padding:32px}.card-red{border-left:4px solid #EF4444}.card-blue{border-left:4px solid #3B82F6}.card-indigo{border-left:4px solid #6366F1}.card h3{font-size:18px;font-weight:700;margin-bottom:12px;color:#fff}.card p{font-size:14px;color:rgba(255,255,255,0.55);line-height:1.65}.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.wf-card{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.07);border-radius:16px;padding:28px 32px;display:flex;gap:24px;align-items:flex-start;margin-bottom:16px}.wf-num{width:44px;height:44px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:800;flex-shrink:0}.wf1-num{background:rgba(59,130,246,0.15);color:#60A5FA}.wf2-num{background:rgba(16,185,129,0.15);color:#34D399}.wf3-num{background:rgba(139,92,246,0.15);color:#A78BFA}.wf4-num{background:rgba(245,158,11,0.15);color:#FCD34D}.wf5-num{background:rgba(20,184,166,0.15);color:#2DD4BF}.wf-body h3{font-size:17px;font-weight:700;color:#fff;margin-bottom:6px}.wf-body p{font-size:14px;color:rgba(255,255,255,0.5);line-height:1.6}.wf-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}.wf-tag{font-size:11px;padding:3px 10px;border-radius:20px;font-weight:600;border:1px solid;background:rgba(99,102,241,0.1);color:#A5B4FC;border-color:rgba(99,102,241,0.3)}.arch-flow{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:16px;padding:40px;margin-bottom:40px}.flow-title{font-size:14px;letter-spacing:2px;text-transform:uppercase;font-weight:700;color:#6366F1;margin-bottom:28px}.layer-row{margin-bottom:32px;position:relative}.layer-row:last-child{margin-bottom:0}.layer-header{font-size:12px;letter-spacing:2px;text-transform:uppercase;font-weight:700;color:rgba(255,255,255,0.4);margin-bottom:12px;display:flex;align-items:center;gap:8px}.layer-icon{width:24px;height:24px;border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:800}.icon-exec{background:rgba(255,255,255,0.1);color:rgba(255,255,255,0.6)}.icon-pros{background:rgba(59,130,246,0.15);color:#60A5FA}.icon-intel{background:rgba(139,92,246,0.15);color:#A78BFA}.agents-pill-group{display:flex;flex-wrap:wrap;gap:8px}.agent-pill{padding:8px 14px;border-radius:8px;font-size:12px;font-weight:600;border:1px solid;background:rgba(255,255,255,0.05);color:rgba(255,255,255,0.7);border-color:rgba(255,255,255,0.1)}.agent-pill.input{background:rgba(245,158,11,0.1);color:#FCD34D;border-color:rgba(245,158,11,0.3)}.agent-pill.output{background:rgba(16,163,74,0.1);color:#34D399;border-color:rgba(16,163,74,0.3)}.accordion{margin-top:16px;border:1px solid rgba(255,255,255,0.08);border-radius:12px;background:rgba(255,255,255,0.02);overflow:hidden}.accordion-header{padding:20px 24px;background:rgba(99,102,241,0.08);border-bottom:1px solid rgba(255,255,255,0.08);cursor:pointer;display:flex;justify-content:space-between;align-items:center;font-weight:600;color:#A5B4FC;transition:all 0.15s;user-select:none}.accordion-header:hover{background:rgba(99,102,241,0.12);color:#fff}.accordion-header.active{background:rgba(99,102,241,0.12);border-bottom:1px solid rgba(99,102,241,0.3)}.accordion-toggle{font-size:20px;transition:transform 0.3s}.accordion-toggle.active{transform:rotate(180deg)}.accordion-content{max-height:0;overflow:hidden;transition:max-height 0.3s ease;padding:0 24px}.accordion-content.active{max-height:3000px;padding:24px}.accordion-content h4{font-size:13px;letter-spacing:2px;text-transform:uppercase;font-weight:700;color:#6366F1;margin:16px 0 8px 0}.accordion-content p{font-size:13px;color:rgba(255,255,255,0.55);line-height:1.6;margin-bottom:12px}.accordion-content ul{list-style:none;padding:0;margin:8px 0 16px 0}.accordion-content ul li{font-size:13px;color:rgba(255,255,255,0.55);padding:4px 0 4px 16px;position:relative}.accordion-content ul li::before{content:'→';position:absolute;left:0;color:rgba(255,255,255,0.2)}.accordion-table{width:100%;border-collapse:collapse;margin:16px 0;font-size:11px}.accordion-table thead tr{background:rgba(99,102,241,0.1)}.accordion-table th{padding:10px 12px;text-align:left;color:rgba(255,255,255,0.6);font-weight:700;border-bottom:1px solid rgba(255,255,255,0.08)}.accordion-table td{padding:10px 12px;color:rgba(255,255,255,0.5);border-bottom:1px solid rgba(255,255,255,0.04)}.accordion-badge{display:inline-block;background:rgba(99,102,241,0.1);color:#A5B4FC;padding:3px 9px;border-radius:4px;font-size:10px;font-weight:700;margin-right:6px}.footer{text-align:center;padding:32px;font-size:12px;color:rgba(255,255,255,0.18);letter-spacing:1.5px;text-transform:uppercase;border-top:1px solid rgba(255,255,255,0.06)}@media (max-width:768px){.hero-h1{font-size:52px}.pitch-hero{padding:60px 24px 48px}.section{padding:56px 24px}.stats-row{grid-template-columns:1fr}.grid-3{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<nav class="topbar">
+  <div class="topbar-logo">Sori<span>.</span></div>
+  <div class="tabs" role="tablist">
+    <div class="tab active" onclick="showTab(0)" role="tab" data-i18n="t0">Overview</div>
+    <div class="tab" onclick="showTab(1)" role="tab" data-i18n="t1">Problem</div>
+    <div class="tab" onclick="showTab(2)" role="tab" data-i18n="t2">Solution</div>
+    <div class="tab" onclick="showTab(3)" role="tab" data-i18n="t3">Product</div>
+    <div class="tab" onclick="showTab(4)" role="tab" data-i18n="t4">Market</div>
+    <div class="tab" onclick="showTab(5)" role="tab" data-i18n="t5">Business Model</div>
+    <div class="tab" onclick="showTab(6)" role="tab" data-i18n="t6">Competition</div>
+    <div class="tab" onclick="showTab(7)" role="tab" data-i18n="t7">Roadmap</div>
+    <div class="tab" onclick="showTab(8)" role="tab" data-i18n="t8">Team</div>
+    <div class="tab" onclick="showTab(9)" role="tab" data-i18n="t9">The Ask</div>
+  </div>
+  <div class="topbar-badge">Confidential</div>
+  <div class="lang-toggle">
+    <div class="lang-btn active" id="btn-en" onclick="setLang('en')">EN</div>
+    <div class="lang-btn" id="btn-es" onclick="setLang('es')">ES</div>
+  </div>
+</nav>
+
+<div class="content">
+
+<div class="tab-pane active page-dark" id="pane-0">
+  <div class="pitch-hero">
+    <div class="hero-inner">
+      <div class="hero-tag" data-i18n="tag1">AI Sales Operator</div>
+      <h1 class="hero-h1"><span data-i18n="h1p1">Sori is the AI<br>sales operator<br>that works while<br></span><em data-i18n="h1p2">you think.</em></h1>
+      <div class="hero-sub" data-i18n="sub1">Voice-activated. WhatsApp-delivered. Human-approved at every step.</div>
+      <p class="hero-desc" data-i18n="desc1">Sori automates the sales and operations work that consumes the day: finding leads, building closing strategies, writing follow-ups, capturing meetings, and analyzing the financial capacity of each prospect. It is not a CRM. It is not a data provider. It is the execution layer that sits on top of both.</p>
+      <div class="stats-row">
+        <div class="stat"><div class="stat-num">10</div><div class="stat-label" data-i18n="stat1">AI agents across 3 layers</div></div>
+        <div class="stat"><div class="stat-num">5</div><div class="stat-label" data-i18n="stat2">Core workflows in MVP1</div></div>
+        <div class="stat"><div class="stat-num">0</div><div class="stat-label" data-i18n="stat3">Actions without human approval</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="footer" data-i18n="footer">Sori — Confidential. Not for distribution.</div>
+</div>
+
+<div class="tab-pane page-mid" id="pane-1">
+  <div class="section">
+    <div class="section-tag" data-i18n="pb1">The problem</div>
+    <h2 class="section-h2" data-i18n="pb2">Sales professionals spend more time preparing than selling.</h2>
+    <p class="section-lead" data-i18n="pb3">The average B2B sales professional spends 60–70% of their working time on non-selling tasks: researching prospects, updating CRMs, writing follow-ups, taking meeting notes, and trying to figure out who has budget. The tools that exist today give them data. Nobody gives them execution.</p>
+    <div class="grid-3">
+      <div class="card card-red"><h3 data-i18n="ph1">Research overload</h3><p data-i18n="pp1">Before every meeting, a salesperson needs to know who the prospect is, what they've done, and how to approach them. Today this is done manually: LinkedIn, Google, scattered notes. It takes hours per prospect.</p></div>
+      <div class="card card-red"><h3 data-i18n="ph2">CRM is a graveyard</h3><p data-i18n="pp2">CRMs are only as good as what gets entered. Sales professionals don't update them because it takes time they don't have. Pipelines go stale. Deals fall through the cracks.</p></div>
+      <div class="card card-red"><h3 data-i18n="ph3">The blank page problem</h3><p data-i18n="pp3">After every meeting, every lead response, every deal update — someone has to write something. A follow-up, a summary, a memo. Most salespeople stare at a blank page and start from scratch every time.</p></div>
+    </div>
+  </div>
+  <div class="footer" data-i18n="footer">Sori — Confidential. Not for distribution.</div>
+</div>
+
+<div class="tab-pane page-light" id="pane-2">
+  <div class="section">
+    <div class="section-tag" data-i18n="sol1">The solution</div>
+    <h2 class="section-h2" data-i18n="sol2">Sori doesn't give you better data.<br>It does the work.</h2>
+    <p class="section-lead" data-i18n="sol3">Sori is an orchestration system of 10 specialized AI agents. The operator speaks a command. Sori dispatches the right agents, pulls the right data, generates the output, and delivers it via WhatsApp — waiting for human approval before anything leaves the system.</p>
+
+    <div class="arch-flow">
+      <div class="flow-title" data-i18n="sol4">How it works: Agent orchestration flow</div>
+
+      <div class="layer-row">
+        <div class="layer-header"><span class="layer-icon icon-exec">I</span> <span data-i18n="arch1">Operator Intent (Voice)</span></div>
+        <div class="agents-pill-group">
+          <span class="agent-pill input" data-i18n="archp_voice">Voice Interface</span>
+          <span style="color:rgba(255,255,255,0.3);">→</span>
+          <span class="agent-pill" data-i18n="archp_orch">Orchestrator</span>
+        </div>
+      </div>
+
+      <div class="layer-row">
+        <div class="layer-header"><span class="layer-icon icon-pros">P</span> <span data-i18n="arch2">Prospecting Layer (Gathers Data)</span></div>
+        <div class="agents-pill-group">
+          <span class="agent-pill">Lead Discovery</span>
+          <span class="agent-pill">Lead Enrichment</span>
+          <span class="agent-pill">Profile Intelligence</span>
+        </div>
+        <div style="font-size:11px;color:rgba(255,255,255,0.35);margin-top:8px;" data-i18n="archp_pros">These agents search, qualify, and build deep prospect profiles from LinkedIn, CRM, and external data sources.</div>
+      </div>
+
+      <div class="layer-row">
+        <div class="layer-header"><span class="layer-icon icon-intel">I</span> <span data-i18n="arch3">Intelligence Layer (Analyzes Context)</span></div>
+        <div class="agents-pill-group">
+          <span class="agent-pill">Meeting Notes</span>
+          <span class="agent-pill">Financial Advisor</span>
+        </div>
+        <div style="font-size:11px;color:rgba(255,255,255,0.35);margin-top:8px;" data-i18n="archp_intel">These agents analyze meetings and budget capacity to feed strategic recommendations.</div>
+      </div>
+
+      <div class="layer-row">
+        <div class="layer-header"><span class="layer-icon icon-exec">E</span> <span data-i18n="arch4">Execution Layer (Generates & Delivers Output)</span></div>
+        <div class="agents-pill-group">
+          <span class="agent-pill">CRM Manager</span>
+          <span class="agent-pill">Email Drafter</span>
+          <span class="agent-pill output">WhatsApp Dispatcher</span>
+        </div>
+        <div style="font-size:11px;color:rgba(255,255,255,0.35);margin-top:8px;" data-i18n="archp_exec">These agents compile all intelligence into actionable documents, strategies, and drafts. Everything waits for human approval before send.</div>
+      </div>
+
+      <div style="margin-top:24px;padding-top:24px;border-top:1px solid rgba(255,255,255,0.08);font-size:12px;color:rgba(255,255,255,0.5);" data-i18n="archp_note">The Orchestrator routes data between layers, tracks state, and ensures every action is logged and awaits human approval before execution.</div>
+    </div>
+  </div>
+  <div class="footer" data-i18n="footer">Sori — Confidential. Not for distribution.</div>
+</div>
+
+<div class="tab-pane page-dark" id="pane-3">
+  <div class="section">
+    <div class="section-tag" data-i18n="prod1">The product</div>
+    <h2 class="section-h2" data-i18n="prod2">5 workflows. 10 agents.<br>One operator in control.</h2>
+
+    <div class="wf-card">
+      <div class="wf-num wf1-num">1</div>
+      <div class="wf-body">
+        <h3 data-i18n="wf1h">Lead Discovery & Outreach</h3>
+        <p data-i18n="wf1d">The operator defines the ideal customer profile. Lead Discovery searches LinkedIn. Lead Enrichment qualifies results. Email Drafter creates personalized messages. Everything waits for operator approval.</p>
+      </div>
+    </div>
+
+    <div class="wf-card">
+      <div class="wf-num wf2-num">2</div>
+      <div class="wf-body">
+        <h3 data-i18n="wf2h">Response & Follow-up Management</h3>
+        <p data-i18n="wf2d">Sori monitors incoming replies, detects intent, auto-updates the CRM, and drafts follow-ups in the operator's voice. All queued for approval before send.</p>
+      </div>
+    </div>
+
+    <div class="wf-card">
+      <div class="wf-num wf3-num">3</div>
+      <div class="wf-body">
+        <h3 data-i18n="wf3h">Remote Meeting Assistant</h3>
+        <p data-i18n="wf3d">Meeting Notes agent joins Zoom/Teams calls, transcribes in real-time, generates internal summary + client memo, and saves both to CRM automatically.</p>
+      </div>
+    </div>
+
+    <div class="wf-card">
+      <div class="wf-num wf4-num">4</div>
+      <div class="wf-body">
+        <h3 data-i18n="wf4h">Voice-Activated Prospect Strategy <span style="background:rgba(245,158,11,0.2);color:#FCD34D;padding:2px 6px;border-radius:3px;font-size:10px;font-weight:700;">NEW</span></h3>
+        <p data-i18n="wf4d">Operator says a name. Profile Intelligence pulls LinkedIn data, builds a personalized closing strategy, generates a Word profile document and outreach email draft, delivers to WhatsApp with voice note. <span style="display:block;margin-top:8px;"><strong data-i18n="wf4exp">Click below for data stack details</strong></span></p>
+        <div class="accordion">
+          <div class="accordion-header" onclick="toggleAccordion(this)"><span data-i18n="acc_pi">Profile Intelligence Data Stack & GDPR Decisions</span><span class="accordion-toggle">▼</span></div>
+          <div class="accordion-content">
+            <h4 data-i18n="acc_pi_title">Data sources evaluated</h4>
+            <p data-i18n="acc_pi_fc">FullContact was ideal — 900+ attributes per person (interests, lifestyle, financial behavior). But it violates GDPR for EU prospects because personal data is aggregated without consent. Permanently dropped.</p>
+            <p data-i18n="acc_pi_px" style="margin-top:12px;"><strong style="color:#A5B4FC;">MVP1: Proxycurl only</strong> — LinkedIn profile scraping. Public professional data. Safe.</p>
+            <ul>
+              <li data-i18n="acc_pi_px1">Current role + employment history</li>
+              <li data-i18n="acc_pi_px2">Education + declared skills</li>
+              <li data-i18n="acc_pi_px3">Public activity (posts, engagement)</li>
+              <li data-i18n="acc_pi_px4">Enables trajectory inference + seniority level</li>
+            </ul>
+            <p style="margin-top:12px;"><strong style="color:#A5B4FC;" data-i18n="acc_pi_mvp2">MVP2: Expanded stack</strong></p>
+            <ul>
+              <li data-i18n="acc_pi_c">Cognism: Intent signals (hiring, funding rounds), verified European contact data</li>
+              <li data-i18n="acc_pi_cb">Clearbit: Company enrichment (tech stack, revenue range, size)</li>
+              <li data-i18n="acc_pi_pdl">PDL: Deep career history, inferred skills, global coverage</li>
+              <li data-i18n="acc_pi_crunch">Crunchbase + press releases: Public investment history</li>
+              <li data-i18n="acc_pi_cal">Calendar API: Behavioral patterns from operator's past meetings (first-party consented data — zero GDPR risk)</li>
+            </ul>
+            <h4 data-i18n="acc_pi_blocked" style="color:#EF4444;">What stays out</h4>
+            <ul>
+              <li data-i18n="acc_pi_blocked1">Facebook/Instagram scraping — violates Meta ToS, requires legal review</li>
+              <li data-i18n="acc_pi_blocked2">Prospect location/behavioral data — GDPR restrictions</li>
+              <li data-i18n="acc_pi_blocked3">Bank data — requires PSD2 compliance + formal legal review</li>
+            </ul>
+            <p style="margin-top:12px;font-size:12px;color:rgba(255,255,255,0.4);" data-i18n="acc_pi_note">When public investment data doesn't exist, Financial Advisor infers budget from company size + seniority, with confidence level flagged.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="wf-card">
+      <div class="wf-num wf5-num">5</div>
+      <div class="wf-body">
+        <h3 data-i18n="wf5h">Financial Intelligence <span style="background:rgba(20,184,166,0.2);color:#2DD4BF;padding:2px 6px;border-radius:3px;font-size:10px;font-weight:700;">NEW</span></h3>
+        <p data-i18n="wf5d">Financial Advisor analyzes prospect budget capacity using CRM history, profile signals, and (optionally) operator's bank data. Outputs: budget estimate, risk rating, pricing recommendation. <span style="display:block;margin-top:8px;"><strong data-i18n="wf5exp">Click below for data details</strong></span></p>
+        <div class="accordion">
+          <div class="accordion-header" onclick="toggleAccordion(this)"><span data-i18n="acc_fa">Financial Advisor Data Inputs & PSD2 Status</span><span class="accordion-toggle">▼</span></div>
+          <div class="accordion-content">
+            <h4 data-i18n="acc_fa_inputs">Data inputs (MVP1)</h4>
+            <ul>
+              <li data-i18n="acc_fa_in1">CRM deal history: past deal sizes, close rates, payment history</li>
+              <li data-i18n="acc_fa_in2">Profile signals: company size, industry, seniority, years in role</li>
+              <li data-i18n="acc_fa_in3">Public data: funding rounds (from Crunchbase in MVP2), press releases</li>
+            </ul>
+            <h4 data-i18n="acc_fa_outputs">Outputs</h4>
+            <ul>
+              <li data-i18n="acc_fa_out1">Estimated prospect budget (with confidence level: inferred vs. verified)</li>
+              <li data-i18n="acc_fa_out2">Deal risk rating (probability of closure based on historical patterns)</li>
+              <li data-i18n="acc_fa_out3">Recommended pricing tier (based on capacity + risk)</li>
+            </ul>
+            <h4 data-i18n="acc_fa_bank">Bank connections (blocked for MVP1+MVP2)</h4>
+            <p data-i18n="acc_fa_bank_txt">Operator bank data (via Plaid in US, Tink/Salt Edge in EU) would add cash flow context. BUT: PSD2 compliance in Europe requires formal legal review from a GDPR-specialist lawyer before any build decision. Blocked until legal sign-off obtained.</p>
+            <p style="margin-top:8px;font-size:12px;color:rgba(255,255,255,0.4);" data-i18n="acc_fa_bank_note">Same for prospect bank data — GDPR restrictions prevent us from analyzing third-party financial information without explicit legal framework.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer" data-i18n="footer">Sori — Confidential. Not for distribution.</div>
+</div>
+
+<div class="tab-pane page-mid" id="pane-4"><div class="section"><div class="section-tag" data-i18n="mkt1">Market opportunity</div><h2 class="section-h2" data-i18n="mkt2">The sales intelligence market is massive. The execution layer is empty.</h2></div><div class="footer" data-i18n="footer">Sori — Confidential. Not for distribution.</div></div>
+
+<div class="tab-pane page-light" id="pane-5"><div class="section"><div class="section-tag" data-i18n="bus1">Business model</div><h2 class="section-h2" data-i18n="bus2">SaaS subscription. Usage-based on data queries at scale.</h2></div><div class="footer" data-i18n="footer">Sori — Confidential. Not for distribution.</div></div>
+
+<div class="tab-pane page-dark" id="pane-6"><div class="section"><div class="section-tag" data-i18n="comp1">Competitive landscape</div><h2 class="section-h2" data-i18n="comp2">We are not competing with data providers. We are what sits on top of them.</h2></div><div class="footer" data-i18n="footer">Sori — Confidential. Not for distribution.</div></div>
+
+<div class="tab-pane page-mid" id="pane-7"><div class="section"><div class="section-tag" data-i18n="road1">Roadmap</div><h2 class="section-h2" data-i18n="road2">Validate fast. Expand deliberately.</h2></div><div class="footer" data-i18n="footer">Sori — Confidential. Not for distribution.</div></div>
+
+<div class="tab-pane page-light" id="pane-8"><div class="section"><div class="section-tag" data-i18n="team1">The team</div><h2 class="section-h2" data-i18n="team2">Three people. Three roles. No overlap.</h2></div><div class="footer" data-i18n="footer">Sori — Confidential. Not for distribution.</div></div>
+
+<div class="tab-pane page-dark" id="pane-9"><div class="section"><div class="section-tag" data-i18n="ask1">The ask</div><h2 class="section-h2" data-i18n="ask2">We are raising to validate,<br>iterate, and go to market.</h2></div><div class="footer" data-i18n="footer">Sori — Confidential. Not for distribution.</div></div>
+
+</div>
+
+<script>
+const i18n={en:{t0:"Overview",t1:"Problem",t2:"Solution",t3:"Product",t4:"Market",t5:"Business Model",t6:"Competition",t7:"Roadmap",t8:"Team",t9:"The Ask",tag1:"AI Sales Operator",h1p1:"Sori is the AI<br>sales operator<br>that works while<br>",h1p2:"you think.",sub1:"Voice-activated. WhatsApp-delivered. Human-approved at every step.",desc1:"Sori automates the sales and operations work that consumes the day: finding leads, building closing strategies, writing follow-ups, capturing meetings, and analyzing the financial capacity of each prospect. It is not a CRM. It is not a data provider. It is the execution layer that sits on top of both.",stat1:"AI agents across 3 layers",stat2:"Core workflows in MVP1",stat3:"Actions without human approval",footer:"Sori — Confidential. Not for distribution.",pb1:"The problem",pb2:"Sales professionals spend more time preparing than selling.",pb3:"The average B2B sales professional spends 60–70% of their working time on non-selling tasks: researching prospects, updating CRMs, writing follow-ups, taking meeting notes, and trying to figure out who has budget. The tools that exist today give them data. Nobody gives them execution.",ph1:"Research overload",ph2:"CRM is a graveyard",ph3:"The blank page problem",pp1:"Before every meeting, a salesperson needs to know who the prospect is, what they've done, and how to approach them. Today this is done manually: LinkedIn, Google, scattered notes. It takes hours per prospect.",pp2:"CRMs are only as good as what gets entered. Sales professionals don't update them because it takes time they don't have. Pipelines go stale. Deals fall through the cracks.",pp3:"After every meeting, every lead response, every deal update — someone has to write something. A follow-up, a summary, a memo. Most salespeople stare at a blank page and start from scratch every time.",sol1:"The solution",sol2:"Sori doesn't give you better data. It does the work.",sol3:"Sori is an orchestration system of 10 specialized AI agents. The operator speaks a command. Sori dispatches the right agents, pulls the right data, generates the output, and delivers it via WhatsApp — waiting for human approval before anything leaves the system.",sol4:"How it works: Agent orchestration flow",arch1:"Operator Intent (Voice)",arch2:"Prospecting Layer (Gathers Data)",arch3:"Intelligence Layer (Analyzes Context)",arch4:"Execution Layer (Generates & Delivers Output)",archp_voice:"Voice Interface",archp_orch:"Orchestrator",archp_pros:"These agents search, qualify, and build deep prospect profiles from LinkedIn, CRM, and external data sources.",archp_intel:"These agents analyze meetings and budget capacity to feed strategic recommendations.",archp_exec:"These agents compile all intelligence into actionable documents, strategies, and drafts. Everything waits for human approval before send.",archp_note:"The Orchestrator routes data between layers, tracks state, and ensures every action is logged and awaits human approval before execution.",prod1:"The product",prod2:"5 workflows. 10 agents. One operator in control.",wf1h:"Lead Discovery & Outreach",wf1d:"The operator defines the ideal customer profile. Lead Discovery searches LinkedIn. Lead Enrichment qualifies results. Email Drafter creates personalized messages. Everything waits for operator approval.",wf2h:"Response & Follow-up Management",wf2d:"Sori monitors incoming replies, detects intent, auto-updates the CRM, and drafts follow-ups in the operator's voice. All queued for approval before send.",wf3h:"Remote Meeting Assistant",wf3d:"Meeting Notes agent joins Zoom/Teams calls, transcribes in real-time, generates internal summary + client memo, and saves both to CRM automatically.",wf4h:"Voice-Activated Prospect Strategy",wf4d:"Operator says a name. Profile Intelligence pulls LinkedIn data, builds a personalized closing strategy, generates a Word profile document and outreach email draft, delivers to WhatsApp with voice note.",wf4exp:"Click below for data stack details",wf5h:"Financial Intelligence",wf5d:"Financial Advisor analyzes prospect budget capacity using CRM history, profile signals, and (optionally) operator's bank data. Outputs: budget estimate, risk rating, pricing recommendation.",wf5exp:"Click below for data details",acc_pi:"Profile Intelligence Data Stack & GDPR Decisions",acc_pi_title:"Data sources evaluated",acc_pi_fc:"FullContact was ideal — 900+ attributes per person (interests, lifestyle, financial behavior). But it violates GDPR for EU prospects because personal data is aggregated without consent. Permanently dropped.",acc_pi_px:"MVP1: Proxycurl only — LinkedIn profile scraping. Public professional data. Safe.",acc_pi_px1:"Current role + employment history",acc_pi_px2:"Education + declared skills",acc_pi_px3:"Public activity (posts, engagement)",acc_pi_px4:"Enables trajectory inference + seniority level",acc_pi_mvp2:"MVP2: Expanded stack",acc_pi_c:"Cognism: Intent signals (hiring, funding rounds), verified European contact data",acc_pi_cb:"Clearbit: Company enrichment (tech stack, revenue range, size)",acc_pi_pdl:"PDL: Deep career history, inferred skills, global coverage",acc_pi_crunch:"Crunchbase + press releases: Public investment history",acc_pi_cal:"Calendar API: Behavioral patterns from operator's past meetings (first-party consented data — zero GDPR risk)",acc_pi_blocked:"What stays out",acc_pi_blocked1:"Facebook/Instagram scraping — violates Meta ToS, requires legal review",acc_pi_blocked2:"Prospect location/behavioral data — GDPR restrictions",acc_pi_blocked3:"Bank data — requires PSD2 compliance + formal legal review",acc_pi_note:"When public investment data doesn't exist, Financial Advisor infers budget from company size + seniority, with confidence level flagged.",acc_fa:"Financial Advisor Data Inputs & PSD2 Status",acc_fa_inputs:"Data inputs (MVP1)",acc_fa_in1:"CRM deal history: past deal sizes, close rates, payment history",acc_fa_in2:"Profile signals: company size, industry, seniority, years in role",acc_fa_in3:"Public data: funding rounds (from Crunchbase in MVP2), press releases",acc_fa_outputs:"Outputs",acc_fa_out1:"Estimated prospect budget (with confidence level: inferred vs. verified)",acc_fa_out2:"Deal risk rating (probability of closure based on historical patterns)",acc_fa_out3:"Recommended pricing tier (based on capacity + risk)",acc_fa_bank:"Bank connections (blocked for MVP1+MVP2)",acc_fa_bank_txt:"Operator bank data (via Plaid in US, Tink/Salt Edge in EU) would add cash flow context. BUT: PSD2 compliance in Europe requires formal legal review from a GDPR-specialist lawyer before any build decision. Blocked until legal sign-off obtained.",acc_fa_bank_note:"Same for prospect bank data — GDPR restrictions prevent us from analyzing third-party financial information without explicit legal framework.",mkt1:"Market opportunity",mkt2:"The sales intelligence market is massive. The execution layer is empty.",bus1:"Business model",bus2:"SaaS subscription. Usage-based on data queries at scale.",comp1:"Competitive landscape",comp2:"We are not competing with data providers. We are what sits on top of them.",road1:"Roadmap",road2:"Validate fast. Expand deliberately.",team1:"The team",team2:"Three people. Three roles. No overlap.",ask1:"The ask",ask2:"We are raising to validate, iterate, and go to market."},es:{t0:"Resumen",t1:"Problema",t2:"Solución",t3:"Producto",t4:"Mercado",t5:"Modelo de Negocio",t6:"Competencia",t7:"Hoja de Ruta",t8:"Equipo",t9:"La Propuesta",tag1:"Operador de Ventas con IA",h1p1:"Sori es el operador<br>de ventas con IA<br>que trabaja mientras<br>",h1p2:"tú piensas.",sub1:"Activado por voz. Entregado por WhatsApp. Aprobación humana en cada paso.",desc1:"Sori automatiza el trabajo de ventas y operaciones que consume el día: encontrar leads, construir estrategias de cierre, escribir seguimientos, capturar reuniones y analizar la capacidad financiera de cada prospecto. No es un CRM. No es un proveedor de datos. Es la capa de ejecución que se sitúa encima de ambos.",stat1:"Agentes de IA en 3 capas",stat2:"Flujos de trabajo en MVP1",stat3:"Acciones sin aprobación humana",footer:"Sori — Confidencial. No distribuir.",pb1:"El problema",pb2:"Los profesionales de ventas gastan más tiempo preparándose que vendiendo.",pb3:"El profesional promedio de ventas B2B dedica el 60–70% de su tiempo a tareas que no generan ventas: investigar prospectos, actualizar CRMs, escribir seguimientos, tomar notas de reuniones e intentar averiguar quién tiene presupuesto. Las herramientas actuales ofrecen datos. Nadie ofrece ejecución.",ph1:"Sobrecarga de investigación",ph2:"El CRM es un cementerio",ph3:"El problema de la página en blanco",pp1:"Antes de cada reunión, un vendedor necesita saber quién es el prospecto, qué ha hecho y cómo abordarlo. Hoy se hace manualmente: LinkedIn, Google, notas dispersas. Lleva horas por prospecto.",pp2:"Los CRMs son tan buenos como lo que se ingrese. Los profesionales de ventas no los actualizan porque no tienen tiempo. Los pipelines envejecen. Los deals caen entre las grietas.",pp3:"Después de cada reunión, respuesta de lead o actualización de deal, alguien debe escribir algo. Un seguimiento, un resumen, un memo. La mayoría de vendedores se quedan mirando una página en blanco.",sol1:"La solución",sol2:"Sori no te da mejores datos. Sori hace el trabajo.",sol3:"Sori es un sistema de orquestación de 10 agentes de IA especializados. El operador dicta un comando. Sori envía a los agentes correctos, obtiene los datos, genera el resultado y lo entrega por WhatsApp — esperando aprobación humana antes de que nada salga del sistema.",sol4:"Cómo funciona: flujo de orquestación de agentes",arch1:"Intención del Operador (Voz)",arch2:"Capa de Prospección (Recopila Datos)",arch3:"Capa de Inteligencia (Analiza Contexto)",arch4:"Capa de Ejecución (Genera y Entrega)",archp_voice:"Voice Interface",archp_orch:"Orchestrator",archp_pros:"Estos agentes buscan, califican y construyen perfiles profundos de prospectos a partir de LinkedIn, CRM y fuentes de datos externas.",archp_intel:"Estos agentes analizan reuniones y capacidad de presupuesto para alimentar recomendaciones estratégicas.",archp_exec:"Estos agentes recopilan toda la inteligencia en documentos, estrategias y borradores accionables. Todo espera aprobación humana antes de enviar.",archp_note:"El Orchestrator enruta datos entre capas, realiza seguimiento del estado y garantiza que cada acción se registre y espere aprobación humana antes de la ejecución.",prod1:"El producto",prod2:"5 flujos. 10 agentes. Un operador en control.",wf1h:"Descubrimiento de Leads y Outreach",wf1d:"El operador define el perfil ideal de cliente. Lead Discovery busca en LinkedIn. Lead Enrichment califica resultados. Email Drafter crea mensajes personalizados. Todo espera aprobación del operador.",wf2h:"Gestión de Respuestas y Seguimientos",wf2d:"Sori monitorea respuestas entrantes, detecta intención, actualiza el CRM automáticamente y redacta seguimientos en la voz del operador. Todo en cola para aprobación antes de enviar.",wf3h:"Asistente de Reuniones Remotas",wf3d:"El agente Meeting Notes se une a llamadas Zoom/Teams, transcribe en tiempo real, genera resumen interno + memo para cliente y guarda ambos en CRM automáticamente.",wf4h:"Estrategia de Prospecto Activada por Voz",wf4d:"El operador dice un nombre. Profile Intelligence extrae datos de LinkedIn, construye una estrategia de cierre personalizada, genera documento Word de perfil y borrador de email, entrega a WhatsApp con nota de voz.",wf4exp:"Haz clic abajo para detalles del data stack",wf5h:"Inteligencia Financiera",wf5d:"Financial Advisor analiza la capacidad de presupuesto del prospecto usando historial de CRM, señales de perfil y (opcionalmente) datos bancarios del operador. Resultados: estimación de presupuesto, tasa de riesgo, recomendación de pricing.",wf5exp:"Haz clic abajo para detalles de datos",acc_pi:"Profile Intelligence Data Stack & Decisiones GDPR",acc_pi_title:"Fuentes de datos evaluadas",acc_pi_fc:"FullContact era ideal — 900+ atributos por persona (intereses, estilo de vida, comportamiento financiero). Pero viola GDPR para prospectos de EU porque los datos personales se agregan sin consentimiento. Eliminado permanentemente.",acc_pi_px:"MVP1: Solo Proxycurl — scraping de perfil de LinkedIn. Datos profesionales públicos. Seguro.",acc_pi_px1:"Rol actual + historial de empleo",acc_pi_px2:"Educación + habilidades declaradas",acc_pi_px3:"Actividad pública (posts, engagement)",acc_pi_px4:"Habilita inferencia de trayectoria + nivel de seniority",acc_pi_mvp2:"MVP2: Stack expandido",acc_pi_c:"Cognism: Señales de intención (contrataciones, rondas de financiación), datos de contacto verificados europeos",acc_pi_cb:"Clearbit: Enriquecimiento de empresa (tech stack, rango de ingresos, tamaño)",acc_pi_pdl:"PDL: Historial de carrera profundo, habilidades inferidas, cobertura global",acc_pi_crunch:"Crunchbase + press releases: Historial de inversión pública",acc_pi_cal:"Calendar API: Patrones de comportamiento de reuniones pasadas del operador (datos de primera parte consentidos — cero riesgo GDPR)",acc_pi_blocked:"Qué se excluye",acc_pi_blocked1:"Scraping de Facebook/Instagram — viola ToS de Meta, requiere revisión legal",acc_pi_blocked2:"Datos de ubicación/comportamiento de prospecto — restricciones GDPR",acc_pi_blocked3:"Datos bancarios — requiere cumplimiento PSD2 + revisión legal formal",acc_pi_note:"Cuando no existen datos públicos de inversión, Financial Advisor infiere presupuesto a partir del tamaño de empresa + seniority, con nivel de confianza marcado.",acc_fa:"Financial Advisor Entradas de Datos & Estado PSD2",acc_fa_inputs:"Entradas de datos (MVP1)",acc_fa_in1:"Historial de deals en CRM: tamaños de deal, tasas de cierre, historial de pagos",acc_fa_in2:"Señales de perfil: tamaño de empresa, industria, seniority, años en rol",acc_fa_in3:"Datos públicos: rondas de financiación (de Crunchbase en MVP2), press releases",acc_fa_outputs:"Resultados",acc_fa_out1:"Presupuesto estimado del prospecto (con nivel de confianza: inferido vs. verificado)",acc_fa_out2:"Tasa de riesgo de deal (probabilidad de cierre basada en patrones históricos)",acc_fa_out3:"Recomendación de tier de pricing (basada en capacidad + riesgo)",acc_fa_bank:"Conexiones bancarias (bloqueadas para MVP1+MVP2)",acc_fa_bank_txt:"Datos bancarios del operador (vía Plaid en US, Tink/Salt Edge en EU) agregarían contexto de flujo de caja. PERO: el cumplimiento PSD2 en Europa requiere revisión legal formal de un abogado especialista en GDPR antes de cualquier decisión de build. Bloqueado hasta obtener aprobación legal.",acc_fa_bank_note:"Lo mismo para datos bancarios de prospecto — las restricciones GDPR nos impiden analizar información financiera de terceros sin un marco legal explícito."}};let currentLang='en';function setLang(lang){currentLang=lang;document.querySelectorAll('[data-i18n]').forEach(el=>{const key=el.dataset.i18n;el.innerHTML=i18n[lang][key]||el.innerHTML});document.getElementById('btn-en').classList.toggle('active',lang==='en');document.getElementById('btn-es').classList.toggle('active',lang==='es')}function showTab(idx){document.querySelectorAll('.tab').forEach((t,i)=>t.classList.toggle('active',i===idx));document.querySelectorAll('.tab-pane').forEach((p,i)=>p.classList.toggle('active',i===idx));window.scrollTo(0,0)}function toggleAccordion(header){const content=header.nextElementSibling;const toggle=header.querySelector('.accordion-toggle');header.classList.toggle('active');content.classList.toggle('active');toggle.classList.toggle('active')}document.addEventListener('keydown',e=>{const t=document.querySelectorAll('.tab');const a=Array.from(t).findIndex(x=>x.classList.contains('active'));if(e.key==='ArrowRight'&&a<t.length-1)showTab(a+1);if(e.key==='ArrowLeft'&&a>0)showTab(a-1)});
+</script>
+
+</body>
+</html>
